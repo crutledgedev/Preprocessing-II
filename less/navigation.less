@@ -9,13 +9,23 @@ header {
     margin-top: 20px;
     border-bottom: 2px dashed @silver;
     padding-bottom: 2%;
+
+    @media @phone {
+        flex-direction: column;
+       
+        
+    }
     
 
     .title{
         width: 50%;
         align-items: center;
         color: @shark;
-        
+       @media @phone{
+           width: 100%;
+           display: inline-block;
+           text-align: center;
+       } 
         
     }//end title
     nav{
@@ -23,6 +33,10 @@ header {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        @media @phone{
+            width: 100%;
+            justify-content: space-around;
+        }
         
 
         a{
