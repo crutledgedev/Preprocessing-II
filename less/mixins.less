@@ -1,31 +1,30 @@
 // Mixins in here
 
-// //.button(@button-bg, @width: @txt-color){
-//     display: block;
-//     background-color: @button-bg;
-//     margin: 0 10px 20px;
-//     cursor: pointer;
-//     width: @width;
-//     height: 45px;
-//     font-size: 2rem;
-//     border-radius: 10px;
-//     color:@txt-color;
-    
-//     &:hover{
-//       background-color: @txt-color;
-//       color: @bg-color;
-//     }
-// }
 
- 
-.btn-style(@bgColor:@button-bg, @width:100px, @color:@white) {
+.button(@bg-color:@button-bg; @width; 200px; @txt-color:@white){
     display: block;
-    background-color: @bgColor;
-    margin: 0 1px 20px;
+    background-color: @bg-color;;
+    margin: 10px 0 0 0;
     cursor: pointer;
-    width: @width;
+    color: @txt-color;
+    width: 200px;
     height: 45px;
     font-size: 2rem;
     border-radius: 10px;
-    color: @color;
+    color: @txt-color;
+    text-align: center;
+    padding-top: 10px;
   }
+
+// @font-color: @shark;
+// @button-bg: @eastern-blue;
+// @main-bg:  @white;
+// @navigation-border: @silver;
+// @footer-bg: @sandy-beach;
+
+// // Colors
+// @white: #FFFFFF;
+// @silver: #C0C0C0;
+// @shark: #212529;
+// @eastern-blue: #17A2B8;
+// @sandy-beach: #FFEBCD;
